@@ -74,5 +74,7 @@ public class Main {
         Category result = service.findByName("블랙핑크");
         Category result2 = service.findById(1);
         System.out.println(service.toJson(result));
+        System.out.println(service.toJson(result2));
+        System.out.println(service.toJsonRoots());
     }
 }

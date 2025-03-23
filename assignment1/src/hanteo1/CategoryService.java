@@ -59,6 +59,11 @@ public class CategoryService {
         return gson.toJson(category);
     }
 
+    public String toJsonRoots() {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        return gson.toJson(this.roots);
+    }
+
     public List<Category> getRoots() {
         return roots;
     }
